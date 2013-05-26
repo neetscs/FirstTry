@@ -1,4 +1,4 @@
-package edu.neetu.project1;
+package edu.neetu.questions;
 
 /**
  * Created with IntelliJ IDEA.
