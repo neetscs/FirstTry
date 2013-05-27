@@ -4,3 +4,4 @@ Questions
 2. Ask for a user's full name and output it with the first letter of each name capitalized: (ex: "john f kenney" -> "John F Kennedy")
 3. Ask the user for a sentence and translate it in to Pig Latin: (http://en.wikipedia.org/wiki/Pig_Latin)
 4. Ask the user for a sentence and output all the palindromes (http://en.wikipedia.org/wiki/Palindrome)
+5. Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
