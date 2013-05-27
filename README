@@ -8,3 +8,4 @@ Questions
 		For numbers which are multiples of both three and five print “FizzBuzz”.
 6. Given a string with some readable English text in it, reverse it without changing the order of the letters within the words themselves. 
 		Example: "I'm getting a new pooper-scooper. Yay!" becomes "!Yay .scooper-pooper new a getting I'm"
+7. Given x1,y1,width1,height1 and x2,y2,width2,height2 that each represent a rectangle, determine if they overlap.
