@@ -10,28 +10,13 @@ public class Question7 {
     
     public static void main(String[] args){
 
-        int x1 = 4, y1 = 4, height1 = 4, width1 = 4, x2 = 9, y2 = 3, height2 = 1, width2 = 1;
-        int w1 = y1 - height1, z1 = x1 + width1, w2 = y2 - height2, z2 = x2 + width2;
+        int x1 =10, y1 = 10, height1 = 4, width1 = 4, x2 = 10, y2 = 11, height2 = 3, width2 = 3;
 
-        boolean isOverlap1 = checkEachOverlap(z1, x2, z2, x1);
-
-        boolean isoverlap2 = checkEachOverlap(w1, y2, w2, y1);
-
-
-        if (isOverlap1 && isoverlap2)
-            System.out.println("The rectangles overlap.");
+        if (((x1 + width1) < x2) || ((x2 + width2) < x1) || ((y1 < y2 - height2) || (y2 < y1 - height1)))
+            System.out.println("The rectangles do not overlap");
 
         else
-            System.out.println("The rectangles do not overlap.");
+            System.out.println("The rectangles overlap");
 
-
-
-    }
-
-    private static boolean checkEachOverlap(int coordinate1, int coordinate2, int coordinate3, int coordinate4) {
-        if (coordinate1 > coordinate2 || coordinate3 < coordinate4)
-            return true;
-
-        return false;
     }
 }
