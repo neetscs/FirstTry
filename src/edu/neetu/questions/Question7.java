@@ -9,9 +9,8 @@ package edu.neetu.questions;
 public class Question7 {
     
     public static void main(String[] args){
-        
-        int x1 = 4, y1 = 4, height1 = 4, width1 = 4, x2 = 3, y2 = 3, height2 = 1, width2 = 1;
-        
+
+        int x1 = 4, y1 = 4, height1 = 4, width1 = 4, x2 = 9, y2 = 3, height2 = 1, width2 = 1;
 
         boolean isOverlap1 = checkOverlap(x1, x2, width1, y1, y2, height1);
         boolean isOverlap2 = checkOverlap(x2, x1, width2, y2, y1, height2);
@@ -31,7 +30,7 @@ public class Question7 {
 
     private static boolean checkOverlap(int xCoordinate1, int xCoordinate2, int xCoordinate3, int yCoordinate1, int yCoordinate2, int yCoordinate3 ) {
 
-        if ((xCoordinate1 <= xCoordinate2 && xCoordinate2 <= xCoordinate3) || (yCoordinate1 <= yCoordinate2 && yCoordinate2 <= yCoordinate3))
+        if ((xCoordinate1 < xCoordinate2 && xCoordinate2 < xCoordinate3) && (yCoordinate1 < yCoordinate2 && yCoordinate2 < yCoordinate3))
                 return true;
 
 

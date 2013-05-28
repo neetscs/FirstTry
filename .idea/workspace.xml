@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" name="Default" comment="solving question 7">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/neetu/questions/Question7.java" />
+    <list default="true" id="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/neetu/questions/Question7.java" afterPath="$PROJECT_DIR$/src/edu/neetu/questions/Question7.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FirstTry.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369767721025" ignored="false" />
+    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369768898678" ignored="false" />
     <file path="/Project1.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601072826" ignored="false" />
     <file path="/fragment.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369706488278" ignored="false" />
     <file path="/File Header.txt.ft" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601403093" ignored="false" />
@@ -21,7 +21,7 @@
     <file path="/Question4.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369683896276" ignored="false" />
     <file path="/Question5.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369684923652" ignored="false" />
     <file path="/Question6.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369707189417" ignored="false" />
-    <file path="/Question7.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369767561166" ignored="false" />
+    <file path="/Question7.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369770685013" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <file leaf-file-name="Question7.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="495" selection-end="495" vertical-scroll-proportion="0.5863747">
+            <state line="12" column="93" selection-start="287" selection-end="287" vertical-scroll-proportion="0.4878049">
               <folding />
             </state>
           </provider>
@@ -439,7 +439,15 @@
       <created>1369707874171</created>
       <updated>1369707874171</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="solving question 7">
+      <created>1369767755992</created>
+      <updated>1369767755992</updated>
+    </task>
+    <task id="LOCAL-00009" summary="solving question 7(modification)">
+      <created>1369768902639</created>
+      <updated>1369768902639</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,14 +465,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2752976" sideWeight="0.49713057" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32738096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.67261904" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38988096" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.61011904" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38988096" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6725" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -511,7 +519,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="solving question 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="solving question 7(modification)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -532,6 +540,7 @@
     <MESSAGE value="solving question 5" />
     <MESSAGE value="solving question 6" />
     <MESSAGE value="solving question 7" />
+    <MESSAGE value="solving question 7(modification)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -620,7 +629,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="495" selection-end="495" vertical-scroll-proportion="0.5863747">
+        <state line="12" column="93" selection-start="287" selection-end="287" vertical-scroll-proportion="0.4878049">
           <folding />
         </state>
       </provider>
