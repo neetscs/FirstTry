@@ -13,7 +13,7 @@ public class Question8 {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
-        int hours = 2, minutes = 20;
+        int hours = 3, minutes = 15;
         int angle = 0;
         int noOfMinutes = 0;
 
@@ -32,7 +32,7 @@ public class Question8 {
             noOfMinutes = (Math.abs((minutes/5) - hours)) * 5;
 
         //formula: noOfMinutes * 6 - (minutes/60 * 360/12)
-        angle = noOfMinutes * 6 - ((minutes * 30) / 60);
+        angle = Math.abs(noOfMinutes * 6 - ((minutes * 30) / 60));
 
         System.out.println(" The angle is: "+angle);
     }
