@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/neetu/questions/Question7.java" afterPath="$PROJECT_DIR$/src/edu/neetu/questions/Question7.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/neetu/questions/Question8.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FirstTry.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369783660117" ignored="false" />
+    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369784508286" ignored="false" />
     <file path="/Project1.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601072826" ignored="false" />
     <file path="/fragment.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369706488278" ignored="false" />
     <file path="/File Header.txt.ft" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601403093" ignored="false" />
@@ -22,6 +22,7 @@
     <file path="/Question5.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369684923652" ignored="false" />
     <file path="/Question6.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369707189417" ignored="false" />
     <file path="/Question7.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369784488334" ignored="false" />
+    <file path="/Question8.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369852938521" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question7.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question7.java">
+      <file leaf-file-name="Question8.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="40" selection-start="332" selection-end="332" vertical-scroll-proportion="0.5497382">
+            <state line="34" column="0" selection-start="818" selection-end="818" vertical-scroll-proportion="1.3350785">
               <folding />
             </state>
           </provider>
@@ -131,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/edu/neetu/questions/Question5.java" />
         <option value="$PROJECT_DIR$/src/edu/neetu/questions/Question6.java" />
         <option value="$PROJECT_DIR$/src/edu/neetu/questions/Question7.java" />
+        <option value="$PROJECT_DIR$/src/edu/neetu/questions/Question8.java" />
       </list>
     </option>
   </component>
@@ -241,35 +243,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Question7">
-    <configuration default="false" name="Question3" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.neetu.questions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="edu.neetu.questions.Question3" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="FirstTry" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Question8">
     <configuration default="false" name="Question4" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -378,6 +352,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="Question8" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.neetu.questions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="edu.neetu.questions.Question8" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FirstTry" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -394,19 +396,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Question3" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Question4" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Question5" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Question6" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Question7" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Question4" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Question5" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Question6" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Question7" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Question8" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Question7" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Question6" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Question5" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Question4" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Question3" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Question8" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Question7" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Question6" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Question5" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Question4" />
       </list>
     </recent_temporary>
   </component>
@@ -465,7 +467,11 @@
       <created>1369783663088</created>
       <updated>1369783663088</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="solving question 7(modification)">
+      <created>1369784511675</created>
+      <updated>1369784511676</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -490,7 +496,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.61011904" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38988096" sideWeight="0.49417758" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38988096" sideWeight="0.49417758" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6725" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -638,6 +644,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="40" selection-start="332" selection-end="332" vertical-scroll-proportion="0.45751634">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="149" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0">
@@ -645,9 +658,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question7.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="332" selection-end="332" vertical-scroll-proportion="0.5497382">
+        <state line="34" column="0" selection-start="818" selection-end="818" vertical-scroll-proportion="1.3350785">
           <folding />
         </state>
       </provider>
