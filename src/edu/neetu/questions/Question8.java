@@ -13,9 +13,9 @@ public class Question8 {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
-        int hours = 3, minutes = 15;
-        int angle = 0;
-        int noOfMinutes = 0;
+        float hours = 3, minutes = 15;
+        float angle = 0;
+        float noOfMinutes = 0;
 
         //Calculate the number of minutes, noOfMinutes between hour hand and minute hand
 

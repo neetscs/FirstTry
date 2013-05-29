@@ -7,7 +7,7 @@
     </list>
     <ignored path="FirstTry.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369853419267" ignored="false" />
+    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369855004408" ignored="false" />
     <file path="/Project1.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601072826" ignored="false" />
     <file path="/fragment.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369706488278" ignored="false" />
     <file path="/File Header.txt.ft" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601403093" ignored="false" />
@@ -22,7 +22,7 @@
     <file path="/Question5.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369684923652" ignored="false" />
     <file path="/Question6.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369707189417" ignored="false" />
     <file path="/Question7.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369784488334" ignored="false" />
-    <file path="/Question8.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369854953019" ignored="false" />
+    <file path="/Question8.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369855182169" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +77,22 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/edu/neetu/questions/Question8.java" line="31" class="edu.neetu.questions.Question8" package="edu.neetu.questions">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -98,7 +114,7 @@
       <file leaf-file-name="Question8.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="8" selection-start="826" selection-end="826" vertical-scroll-proportion="0.8036649">
+            <state line="17" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.58638746">
               <folding />
             </state>
           </provider>
@@ -475,7 +491,11 @@
       <created>1369853427490</created>
       <updated>1369853427490</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="solving question 8">
+      <created>1369855012161</created>
+      <updated>1369855012161</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -500,7 +520,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.61011904" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38988096" sideWeight="0.49417758" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38988096" sideWeight="0.49417758" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6725" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -665,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="8" selection-start="826" selection-end="826" vertical-scroll-proportion="0.8036649">
+        <state line="17" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.58638746">
           <folding />
         </state>
       </provider>
