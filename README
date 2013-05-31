@@ -12,34 +12,3 @@ Questions
 8. Write the a program that calculates the smaller angle (in degrees) between the minute hand and hour hand in an analog clock.
         The hour will be specified as an integer between 1 and 12 (inclusive) and minute will be specified as an integer between 0 and 59 (inclusive)
 
-
-
-//            ArrayList <Integer> newWordNumberArray = new ArrayList<Integer>();
-//            int noOfIndex = k - 1, j=0;
-//
-//            TreeMap <Integer, ArrayList<Integer>> treeMap = new TreeMap();
-//
-//            for(i=0;i<noOfIndex;i++){
-//               newWordNumberArray.add(wordNumberArray[i]);
-//
-//                for(j=(i+1); j<noOfIndex;j++){
-//
-//                    if(lineNumberArray[i] == lineNumberArray[j])
-//                        newWordNumberArray.add(wordNumberArray[j]);
-//
-//                }
-//
-//                treeMap.put(lineNumberArray[i], newWordNumberArray);
-//                newWordNumberArray.clear();
-//            }
-//
-//            Set set = treeMap.entrySet();
-//
-//            Iterator iterator = set.iterator();
-//
-//            while(iterator.hasNext()) {
-//                Map.Entry me = (Map.Entry)iterator.next();
-//                System.out.println(me.getKey() + ": " + me.getValue());
-//
-
-//            }
