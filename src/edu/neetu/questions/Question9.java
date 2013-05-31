@@ -94,15 +94,13 @@ public class Question9 {
 
     private static void findWord(Scanner dataFileScanner, ArrayList<Integer> wordNumList, int lineNumber) {
         int wordCounter = 0;
-        String result = null;
         String wordInDataFile;
         for (Integer wordToBeScannedPosition : wordNumList){
 
             while (wordCounter < wordToBeScannedPosition) {
                 wordInDataFile = dataFileScanner.next();
-                if (wordCounter == wordToBeScannedPosition - 1){
-                    String foundWord = wordInDataFile;
-                    hashMap.put(String.valueOf(lineNumber) + ":" + String.valueOf(wordToBeScannedPosition), foundWord);
+                if (wordCounter == (wordToBeScannedPosition - 1)){
+                    hashMap.put(String.valueOf(lineNumber) + ":" + String.valueOf(wordToBeScannedPosition), wordInDataFile);
                 }
                 wordCounter++;
             }
