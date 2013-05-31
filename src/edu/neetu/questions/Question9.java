@@ -36,7 +36,7 @@ public class Question9 {
                 int lineNumber = new Integer(eachIndex.substring(0, colonLocation));
                 int wordNumber = new Integer(eachIndex.substring(colonLocation + 1));
 
-                //Scannin
+                //Adding the line number and word number from index file to a tree map
                 addLineAndWordNumberToMap(lineNumber, wordNumber);
             }
 
@@ -52,6 +52,7 @@ public class Question9 {
 
                 while (lineCounter < lineNumber){
                     if (lineCounter == lineNumber - 1)
+                        //find the all the words corresponding to the line number.
                         findWord(dataFileScanner, wordNumList, lineNumber);
                     dataFileScanner.nextLine();
                     lineCounter++;
@@ -59,11 +60,13 @@ public class Question9 {
             }
 
             indexFileScanner = new Scanner(indexFile);
-            String eachIndex;
+
+            String eachEntryInIndexFile;
 
             while(indexFileScanner.hasNext()){
-                eachIndex = indexFileScanner.next();
-                printWord(eachIndex);
+                eachEntryInIndexFile = indexFileScanner.next();
+                //Print all the words corresponding to a line number and word number from index file
+                printWord(eachEntryInIndexFile);
             }
         }
 

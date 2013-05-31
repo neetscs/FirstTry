@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/neetu/questions/Question9.java" afterPath="$PROJECT_DIR$/src/edu/neetu/questions/Question9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FirstTry.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369975511624" ignored="false" />
+    <file path="/Dummy.txt" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1370033732986" ignored="false" />
     <file path="/Project1.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601072826" ignored="false" />
     <file path="/fragment.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369706488278" ignored="false" />
     <file path="/File Header.txt.ft" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369601403093" ignored="false" />
@@ -24,7 +23,7 @@
     <file path="/Question6.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369707189417" ignored="false" />
     <file path="/Question7.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369784488334" ignored="false" />
     <file path="/Question8.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1369866821016" ignored="false" />
-    <file path="/Question9.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1370033656591" ignored="false" />
+    <file path="/Question9.java" changelist="14c7da77-96d4-4fcd-975d-55c40d9eaa4f" time="1370034098196" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <file leaf-file-name="Question9.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="49" selection-start="3648" selection-end="3648" vertical-scroll-proportion="3.2984293">
+            <state line="67" column="100" selection-start="2476" selection-end="2476" vertical-scroll-proportion="1.4528795">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +98,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Scanner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2652" column="19" selection-start="102041" selection-end="102041" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index_file.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="81" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="0" column="54" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +119,7 @@
       <file leaf-file-name="data_file.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="21" selection-start="2392" selection-end="2396" vertical-scroll-proportion="25.461538">
+            <state line="105" column="4" selection-start="5142" selection-end="5142" vertical-scroll-proportion="-60.576923">
               <folding />
             </state>
           </provider>
@@ -146,8 +154,8 @@
         <option value="$PROJECT_DIR$/src/edu/neetu/questions/Question7.java" />
         <option value="$PROJECT_DIR$/src/edu/neetu/questions/Question8.java" />
         <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/index_file.txt" />
         <option value="$PROJECT_DIR$/src/edu/neetu/questions/Question9.java" />
+        <option value="$PROJECT_DIR$/index_file.txt" />
       </list>
     </option>
   </component>
@@ -508,7 +516,11 @@
       <created>1369975518252</created>
       <updated>1369975518252</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="committing the completed version prior to code cleanup">
+      <created>1370033739062</created>
+      <updated>1370033739062</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -532,7 +544,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.61011904" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.61011904" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38988096" sideWeight="0.49417758" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6725" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -580,7 +592,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit changes till reading from index file and creating tree map" />
+    <option name="LAST_COMMIT_MESSAGE" value="committing the completed version prior to code cleanup" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -606,6 +618,7 @@
     <MESSAGE value="solving question 8 - changes" />
     <MESSAGE value="committing new text files and Question 9" />
     <MESSAGE value="commit changes till reading from index file and creating tree map" />
+    <MESSAGE value="committing the completed version prior to code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -701,28 +714,28 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2652" column="19" selection-start="102041" selection-end="102041" vertical-scroll-proportion="0.72148544">
+        <state line="2652" column="19" selection-start="102041" selection-end="102041" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index_file.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="81" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+        <state line="0" column="54" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_file.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="2392" selection-end="2396" vertical-scroll-proportion="25.461538">
+        <state line="105" column="4" selection-start="5142" selection-end="5142" vertical-scroll-proportion="-60.576923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neetu/questions/Question9.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="49" selection-start="3648" selection-end="3648" vertical-scroll-proportion="3.2984293">
+        <state line="67" column="100" selection-start="2476" selection-end="2476" vertical-scroll-proportion="1.4528795">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
