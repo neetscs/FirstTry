@@ -1,5 +1,7 @@
 package edu.neetu.questions;
 
+import sun.nio.cs.ext.MacThai;
+
 /**
  * Created with IntelliJ IDEA.
  * User: neetu
@@ -9,28 +11,24 @@ package edu.neetu.questions;
 public class Question10 {
     public static void main(String[] args){
 
-        String[] array1 = {"a", "c", "x", "y", "z"};
-        String[] array2 = {"a", "b", "c", "d", "x", "y"};
+        String[] array1 = {"a", "c", "x", "z"};
+        String[] array2 = {"a", "b", "c", "d", "z", "z", "z"};
 
-        int array1Pointer = 0, array2Pointer = 0, count = 0, startPointer = 0;
-        int targetLength = 0;
+        int array1IDX = 0, array2IDX = 0, count = 0;
 
-        targetLength = (array1.length + array2.length)/2;
+        while ( array1IDX < array1.length && array2IDX < array2.length ){
 
-        while ( startPointer <= targetLength ){
-            if( array1[array1Pointer].compareToIgnoreCase(array2[array2Pointer]) > 0) {
-               array2Pointer++;
+            if( array1[array1IDX].compareToIgnoreCase(array2[array2IDX]) > 0) {
+               array2IDX++;
+            }
+            else if( array1[array1IDX].compareToIgnoreCase(array2[array2IDX]) == 0 ) {
+                count++;
+                array1IDX++;
+                array2IDX++;
             }
             else {
-                if( array1[array1Pointer].compareToIgnoreCase(array2[array2Pointer]) == 0 ) {
-                count++;
-                array1Pointer++;
-                array2Pointer++;
+                array1IDX++;
             }
-            else
-                array1Pointer++;
-            }
-         startPointer++;
         }
          System.out.println(count);
     }
