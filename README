@@ -11,4 +11,14 @@ Questions
 7. Given x1,y1,width1,height1 and x2,y2,width2,height2 that each represent a rectangle, determine if they overlap.
 8. Write the a program that calculates the smaller angle (in degrees) between the minute hand and hour hand in an analog clock.
         The hour will be specified as an integer between 1 and 12 (inclusive) and minute will be specified as an integer between 0 and 59 (inclusive)
-
+9. You are given two text files, index_file.txt and data_file.txt. data_file.txt is a large file containing a lot of words.
+	index_file.txt contains space separated tokens, each of which is of the format: lineNumber:wordNumber. Your task 
+	is to translate the tokens in the index_file.txt to their corresponding words from data_file.txt. The best solution
+	minimizes memory usage and avoids needing the entire data_file.txt to be read in to memory.
+10. Start with two arrays of strings, a and b, each in alphabetical order, possibly with duplicates. 
+	Return the count of the number of strings which appear in both arrays. The best "linear" solution makes a 
+	single pass over both arrays, taking advantage of the fact that they are in alphabetical order. 
+	
+	commonTwo({"a", "c", "x"}, {"b", "c", "d", "x"}) → 2
+	commonTwo({"a", "c", "x"}, {"a", "b", "c", "x", "z"}) → 3
+	commonTwo({"a", "b", "c"}, {"a", "b", "c"}) → 3
