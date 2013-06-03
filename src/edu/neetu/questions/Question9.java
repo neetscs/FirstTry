@@ -66,7 +66,9 @@ public class Question9 {
             while(indexFileScanner.hasNext()){
                 eachEntryInIndexFile = indexFileScanner.next();
                 //Print all the words corresponding to a line number and word number from index file
-                printWord(eachEntryInIndexFile);
+                if(hashMap.containsKey(eachEntryInIndexFile)){
+                    System.out.println(hashMap.get(eachEntryInIndexFile));
+                }
             }
         }
 
@@ -74,21 +76,6 @@ public class Question9 {
             System.out.println("File not found");
         }
 
-    }
-
-    private static void printWord(String eachIndex) {
-        Set hashMapSet = hashMap.entrySet();
-        Iterator hashMapIterator = hashMapSet.iterator();
-
-        while (hashMapIterator.hasNext()){
-            Map.Entry mapEntry = (Map.Entry) hashMapIterator.next();
-            String keyInHashMap = (String) mapEntry.getKey();
-            String foundWord = (String) mapEntry.getValue();
-
-            if(eachIndex.equals(keyInHashMap)){
-                System.out.println(foundWord);
-            }
-        }
     }
 
 
