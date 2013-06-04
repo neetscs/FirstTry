@@ -7,6 +7,7 @@
       <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.5.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/ezmorph-1.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-lib-2.4-jdk15.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.8.0-javadoc.jar!/" />
@@ -14,6 +15,7 @@
       <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.1-javadoc.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.5-javadoc.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/ezmorph-1.0.6-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-lib-2.4-jdk15-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.8.0-sources.jar!/" />
@@ -21,6 +23,7 @@
       <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.1-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.5-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/ezmorph-1.0.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-lib-2.4-jdk15-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
