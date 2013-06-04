@@ -1,6 +1,9 @@
 package edu.neetu.questions;
 
 import com.sun.javafx.tools.packager.bundlers.IOUtils;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONSerializer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,8 +21,16 @@ public class Question12 {
 
         String jsonFileName = "sample_data.json";
         String jsonFileContents = readJsonFile(jsonFileName);
+        System.out.println(jsonFileContents);
+        JSONArray jsonArray = (JSONArray) JSONSerializer.toJSON(jsonFileContents);
 
+        int size = jsonArray.getJSONObject(0).getJSONArray("trends").size();
+        int start = 0;
 
+        while (start < size){
+            System.out.println(jsonArray.getJSONObject(0).getJSONArray("trends").getJSONObject(start).get("name"));
+            start++;
+        }
 
     }
 
