@@ -29,3 +29,18 @@ Questions
 	sumDigits(126) → 9
 	sumDigits(49) → 13
 	sumDigits(12) → 3
+12. Download this file and save it as a sample_data.json. 
+	https://docs.google.com/file/d/0B4mGtcW98BshVzQ5dVpXMFdoNFU/edit?usp=sharing
+	Research how to use a third-party library called json-lib (http://answers.oreilly.com/topic/257-how-to-parse-json-in-java/) so that
+	you can parse the contents of sample_data.json and print out a list of trending events like so:
+	
+	1. #GanaPuntosSi
+	2. #WordsThatDescribeMe
+	3. #10PersonasQueExtra\u00f1oMucho
+	4. Apple $1.5
+	5. Zelko
+	6. LWWY
+	7. Lance Armstrong
+	8. Gonzo
+	9. Premium Rush
+	10. Sweet Dreams
