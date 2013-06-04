@@ -10,32 +10,26 @@ import java.util.Scanner;
  */
 public class Question11 {
 
-    public static int sum = 0;
-
     public static void main(String[] args){
+
+        int result = 0;
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a number: ");
         int number = new Integer(scanner.next());
 
-        sum = sumOfDigits(number);
+        result = sumOfDigits(number);
 
-        System.out.println("The sum of the numbers is: " + sum);
+        System.out.println("The sum of the numbers is: " + result);
     }
 
     private static int sumOfDigits(int number) {
 
        if (number == 0)
-           return sum;
+           return 0;
 
-       else {
-           sum = sum + (number % 10);
-           number = number / 10;
-           sumOfDigits(number);
-       }
-
-     return sum;
-
+       else
+           return (number % 10) + sumOfDigits(number/10);
     }
 }
