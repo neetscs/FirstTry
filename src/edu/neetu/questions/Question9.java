@@ -1,7 +1,7 @@
 package edu.neetu.questions;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.*;
 
 /**
@@ -12,72 +12,60 @@ import java.util.*;
  */
 public class Question9 {
 
-    private static TreeMap<Integer, ArrayList<Integer>> treeMap = new TreeMap();
-    private static HashMap<String, String> hashMap = new HashMap();
+    private static TreeMap<Integer, ArrayList<Integer>> treeMap = new TreeMap<>();
+    private static HashMap<String, String> hashMap = new HashMap<>();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         int lineCounter = 0;
 
-        String dataFileName = "data_file.txt";
-        String indexFileName = "index_file.txt";
+        String dataFileName = "/question_9/data_file.txt";
+        String indexFileName = "/question_9/index_file.txt";
 
         Scanner indexFileScanner, dataFileScanner;
+        InputStream indexFile = Question9.class.getResourceAsStream(indexFileName);
+        InputStream dataFile = Question9.class.getResourceAsStream(dataFileName);
 
-        File indexFile = new File(indexFileName);
-        File dataFile = new File(dataFileName);
 
-        try{
+        indexFileScanner = new Scanner(indexFile);
+        while (indexFileScanner.hasNext()){
+            String eachIndex = indexFileScanner.next();
+            int colonLocation = eachIndex.indexOf(":");
+            int lineNumber = new Integer(eachIndex.substring(0, colonLocation));
+            int wordNumber = new Integer(eachIndex.substring(colonLocation + 1));
 
-            indexFileScanner = new Scanner(indexFile);
-            while (indexFileScanner.hasNext()){
-                String eachIndex = indexFileScanner.next();
-                int colonLocation = eachIndex.indexOf(":");
-                int lineNumber = new Integer(eachIndex.substring(0, colonLocation));
-                int wordNumber = new Integer(eachIndex.substring(colonLocation + 1));
-
-                //Adding the line number and word number from index file to a tree map
-                addLineAndWordNumberToMap(lineNumber, wordNumber);
-            }
-
-            dataFileScanner = new Scanner(dataFile);
-
-            Set<Map.Entry<Integer, ArrayList<Integer>>> treeMapSet = treeMap.entrySet();
-            Iterator<Map.Entry<Integer, ArrayList<Integer>>> treeMapIterator = treeMapSet.iterator();
-
-            while (treeMapIterator.hasNext()){
-                Map.Entry<Integer, ArrayList<Integer>> mapEntry = treeMapIterator.next();
-                Integer lineNumber = mapEntry.getKey();
-                ArrayList<Integer> wordNumList = mapEntry.getValue();
-
-                while (lineCounter < lineNumber){
-                    if (lineCounter == lineNumber - 1)
-                        //find the all the words corresponding to the line number.
-                        findWord(dataFileScanner, wordNumList, lineNumber);
-                    dataFileScanner.nextLine();
-                    lineCounter++;
-                }
-            }
-
-            indexFileScanner = new Scanner(indexFile);
-
-            String eachEntryInIndexFile;
-
-            while(indexFileScanner.hasNext()){
-                eachEntryInIndexFile = indexFileScanner.next();
-                //Print all the words corresponding to a line number and word number from index file
-                if(hashMap.containsKey(eachEntryInIndexFile)){
-                    System.out.println(hashMap.get(eachEntryInIndexFile));
-                }
-            }
+            //Adding the line number and word number from index file to a tree map
+            addLineAndWordNumberToMap(lineNumber, wordNumber);
         }
 
-        catch (FileNotFoundException e){
-            System.out.println("File not found");
-        }
+        dataFileScanner = new Scanner(dataFile);
 
+        Set<Map.Entry<Integer, ArrayList<Integer>>> treeMapSet = treeMap.entrySet();
+
+        for (Map.Entry<Integer, ArrayList<Integer>> mapEntry : treeMapSet) {
+            Integer lineNumber = mapEntry.getKey();
+            ArrayList<Integer> wordNumList = mapEntry.getValue();
+
+            while (lineCounter < lineNumber) {
+                if (lineCounter == lineNumber - 1)
+                    //find the all the words corresponding to the line number.
+                    findWord(dataFileScanner, wordNumList, lineNumber);
+                dataFileScanner.nextLine();
+                lineCounter++;
+            }
+        }
+        indexFile = Question9.class.getResourceAsStream(indexFileName);
+        indexFileScanner = new Scanner(indexFile);
+        String eachEntryInIndexFile;
+
+        while(indexFileScanner.hasNext()){
+            eachEntryInIndexFile = indexFileScanner.next();
+            //Print all the words corresponding to a line number and word number from index file
+            if(hashMap.containsKey(eachEntryInIndexFile)){
+                System.out.print(hashMap.get(eachEntryInIndexFile) + " ");
+            }
+        }
     }
-
 
     private static void findWord(Scanner dataFileScanner, ArrayList<Integer> wordNumList, int lineNumber) {
         int wordCounter = 0;
@@ -101,7 +89,7 @@ public class Question9 {
         if(treeMap.containsKey(lineNumber))
             wordNumberArray = treeMap.get(lineNumber);
         else
-            wordNumberArray = new ArrayList<Integer>();
+            wordNumberArray = new ArrayList<>();
 
         wordNumberArray.add(wordNumber);
         Collections.sort(wordNumberArray);
