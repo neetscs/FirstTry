@@ -44,3 +44,14 @@ Questions
 	8. Gonzo
 	9. Premium Rush
 	10. Sweet Dreams
+13. Write a program that uses the Twitter REST API to list the top trending topics in available locations.
+	The UI of the program should first list available locations in a numbered list, like so:
+	
+	1. LA
+	2. SF
+	3 ...
+	
+	Enter location id: _
+	
+	After the user has choosen the location, list the trending topics in that location, also in a numbered list.
+	
