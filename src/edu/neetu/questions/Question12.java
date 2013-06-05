@@ -1,8 +1,7 @@
 package edu.neetu.questions;
 
-import com.sun.javafx.tools.packager.bundlers.IOUtils;
+
 import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
 
 import java.io.File;
@@ -31,7 +30,6 @@ public class Question12 {
             System.out.println(jsonArray.getJSONObject(0).getJSONArray("trends").getJSONObject(start).get("name"));
             start++;
         }
-
     }
 
     private static String readJsonFile(String jsonFileName) {
