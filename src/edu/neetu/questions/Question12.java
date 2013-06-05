@@ -1,12 +1,9 @@
 package edu.neetu.questions;
 
-import com.sun.javafx.tools.packager.bundlers.IOUtils;
 import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 /**
@@ -19,7 +16,7 @@ public class Question12 {
 
     public static void main(String[] args){
 
-        String jsonFileName = "sample_data.json";
+        String jsonFileName = "/question_12/sample_data.json";
         String jsonFileContents = readJsonFile(jsonFileName);
         System.out.println(jsonFileContents);
         JSONArray jsonArray = (JSONArray) JSONSerializer.toJSON(jsonFileContents);
@@ -35,19 +32,13 @@ public class Question12 {
     }
 
     private static String readJsonFile(String jsonFileName) {
-        File jsonFile = new File(jsonFileName);
-        try{
-            StringBuffer scannerContent = new StringBuffer() ;
-            Scanner jsonScanner = new Scanner(jsonFile);
-            while (jsonScanner.hasNext()){
+        InputStream jsonFile = Question12.class.getResourceAsStream(jsonFileName);
+        StringBuffer scannerContent = new StringBuffer() ;
+        Scanner jsonScanner = new Scanner(jsonFile);
+        while (jsonScanner.hasNext()){
 
-                scannerContent.append(jsonScanner.nextLine());
-            }
-            return scannerContent.toString();
+            scannerContent.append(jsonScanner.nextLine());
         }
-        catch(FileNotFoundException e){
-            System.out.println("File Not Found");
-        }
-    return null;
+        return scannerContent.toString();
     }
 }
