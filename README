@@ -54,4 +54,16 @@ Questions
 	Enter location id: _
 	
 	After the user has chosen the location, list the trending topics in that location, also in a numbered list.
+14. Write a program that asks the user for search terms and then display a list of tweets that match the search terms using
+	the Twitter API. The UI of the program should look like this:
+	
+	Please enter search keywords: _
+	
+	Here are your results:
+	
+	1. ...
+	2. ...
+	
+	Please enter search keywords: _
+
 	
