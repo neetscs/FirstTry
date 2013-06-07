@@ -1,10 +1,11 @@
 package edu.neetu.questions;
 
-import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
 import sun.misc.BASE64Encoder;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,40 +26,36 @@ public class Question14 {
     private static String CONSUMER_SECRET = "nCuaDGOFzeAdeaemX97FPq2bOj9QnQYxBjEVJPAZE";
 
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Please enter search keywords: ");
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Please enter search keywords (q to quit): ");
+            String searchKeyWord = scanner.nextLine();
 
-        String searchKeyWord = scanner.nextLine();
-        Query newQuery = constructQueryFor(searchKeyWord);
-        ArrayList<Tweets> tweetsForQuery = getTweetsFor(newQuery);
-        displayTweets(tweetsForQuery);
+            if ("q".equalsIgnoreCase(searchKeyWord))
+                    System.exit(0);
+            else {
+                    Query newQuery =  new Query(searchKeyWord);
+                    String encodedURL = newQuery.getURLEncodedString(newQuery);
+                    ArrayList<Tweet> tweetsForQuery = getTweetsFor(encodedURL);
+                    displayTweets(tweetsForQuery);
+
+                    System.out.println("Press Enter to continue..");
+                    System.in.read();
+            }
+        }
     }
 
-    private static void displayTweets(ArrayList<Tweets> tweetsForQuery) {
+    private static void displayTweets(ArrayList<Tweet> tweetsForQuery) {
         int i = 1;
         System.out.println("Here are your results: ");
-        for (Tweets tweets : tweetsForQuery) {
-            System.out.println(i + ". " + "#"  + tweets.getUserName() + " " + tweets.getTweet());
+        for (Tweet tweets : tweetsForQuery) {
+            System.out.println(i + ". " + "@"  + tweets.getUserName() + " " + tweets.getTweet());
             i++;
         }
     }
 
-    public static Query constructQueryFor(String searchTerm){
-        Query newQuery = null;
-        if (searchTerm.contains(" ")){
-           newQuery = new Query(searchTerm.replaceAll(" ", "%20"));
-        }
-        if(searchTerm.contains("#")){
-            newQuery = new Query(searchTerm.replace("#","%23"));
-        }
-        if (searchTerm.contains("\"")){
-            newQuery = new Query(searchTerm.replaceAll(" ", "%22"));
-        }
-        return newQuery;
-    }
-
-    public static ArrayList<Tweets> getTweetsFor(Query query) throws IOException {
-        String urlString = "https://api.twitter.com/1.1/search/tweets.json?q=".concat(query.getQueryString());
+    public static ArrayList<Tweet> getTweetsFor(String encodedURL) throws IOException {
+        String urlString = "https://api.twitter.com/1.1/search/tweets.json?q=".concat(encodedURL);
         URL url = new URL(urlString);
         URLConnection conn = url.openConnection();
         conn.addRequestProperty("Authorization", getAuthHeaderValue());
@@ -70,11 +67,11 @@ public class Question14 {
 
         int length = jsonObject.getJSONArray("statuses").size();
         int counter = 0;
-        ArrayList<Tweets> tweets = new ArrayList<>();
+        ArrayList<Tweet> tweets = new ArrayList<>();
         while (counter < length) {
             String userName = jsonObject.getJSONArray("statuses").getJSONObject(counter).getJSONObject("user").getString("screen_name");
             String tweet = jsonObject.getJSONArray("statuses").getJSONObject(counter).getString("text");
-            tweets.add(new Tweets(userName, tweet));
+            tweets.add(new Tweet(userName, tweet));
             counter++;
         }
         return tweets;
@@ -116,13 +113,17 @@ public class Question14 {
         public String getQueryString() {
             return queryString;
         }
+        public String getURLEncodedString(Query newQuery) throws UnsupportedEncodingException {
+            String searchWord = newQuery.getQueryString();
+            return URLEncoder.encode(searchWord, "UTF-8").replace("+", "%20");
+        }
     }
 
-    private static class Tweets {
+    private static class Tweet {
         private String userName;
         private String tweet;
 
-        public Tweets(String newUserName, String newTweet){
+        public Tweet(String newUserName, String newTweet){
             userName = newUserName;
             tweet = newTweet;
         }
