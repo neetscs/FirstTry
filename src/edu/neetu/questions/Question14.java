@@ -31,12 +31,12 @@ public class Question14 {
             System.out.print("Please enter search keywords (q to quit): ");
             String searchKeyWord = scanner.nextLine();
 
-            if ("q".equalsIgnoreCase(searchKeyWord))
+            if ("q".equalsIgnoreCase(searchKeyWord)) {
                     System.exit(0);
+            }
             else {
                     Query newQuery =  new Query(searchKeyWord);
-                    String encodedURL = newQuery.getURLEncodedString(newQuery);
-                    ArrayList<Tweet> tweetsForQuery = getTweetsFor(encodedURL);
+                    ArrayList<Tweet> tweetsForQuery = getTweetsFor(newQuery);
                     displayTweets(tweetsForQuery);
 
                     System.out.println("Press Enter to continue..");
@@ -54,8 +54,8 @@ public class Question14 {
         }
     }
 
-    public static ArrayList<Tweet> getTweetsFor(String encodedURL) throws IOException {
-        String urlString = "https://api.twitter.com/1.1/search/tweets.json?q=".concat(encodedURL);
+    public static ArrayList<Tweet> getTweetsFor(Query query) throws IOException {
+        String urlString = "https://api.twitter.com/1.1/search/tweets.json?q=".concat(query.getURLEncodedString());
         URL url = new URL(urlString);
         URLConnection conn = url.openConnection();
         conn.addRequestProperty("Authorization", getAuthHeaderValue());
@@ -113,9 +113,9 @@ public class Question14 {
         public String getQueryString() {
             return queryString;
         }
-        public String getURLEncodedString(Query newQuery) throws UnsupportedEncodingException {
-            String searchWord = newQuery.getQueryString();
-            return URLEncoder.encode(searchWord, "UTF-8").replace("+", "%20");
+        public String getURLEncodedString() throws UnsupportedEncodingException {
+            String encodedQuery =  URLEncoder.encode(queryString, "UTF-8").replace("+", "%20");
+            return encodedQuery;
         }
     }
 
