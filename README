@@ -65,5 +65,20 @@ Questions
 	2. ...
 	
 	Please enter search keywords: _
-
+15. Come up with an object oriented design for the following scenario: you have different kinds of vehicles. All vehicles
+	have a maximum speed at which they can travel. Some vehicles have wheels and different vehicles have different number
+	of wheels. All vehicles have different capacity (the total number of people that it can transport including the driver).
+	All mechanical vehicles consume some kind of fuel and they have a rate at which they consume the fuel at their
+	maximum speed. Write a program that
+	
+	1. Shows the following list of vehicles: 
+		(a) bike(1 person, 5 gallons of fuel, 0.5 gal/hr @ 65mph)
+		(b) boat(3 people, 10 gallons, 1 gal/hr @ 35mph)
+		(c) Toyota Camry(4 ppl, 15 gallons, 0.4 gal/hr @ 80mph)
+		(d) SUV(8 ppl, 18 gallons, 0.6 gal/hr @ 80mph) 
+		(e) helicopter(2 ppl, 10gallons, 2.2 gal/hr @ 100mph) 
+		and allows them to choose all the vehicles they have access to.
+	2. Once the user chooses all the vehicles they have, ask the user how far their desination is.
+	3. Then for each vehicle, output the total amount of time and the number of fuel refills they need to reach
+		their destination
 	
