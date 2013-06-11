@@ -1,6 +1,7 @@
 package edu.neetu.questions;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -36,7 +37,7 @@ public class Question15 {
             counter++;
         }
 
-        System.out.println("Enter the Vehicles u have access to (Separate your choices by spaces): ");
+        System.out.println("Enter the Vehicle name from the list above that u have access to (Separate your choices by space): ");
         Scanner scanner = new Scanner(System.in);
 
         String vehiclesChosen = scanner.nextLine();
@@ -47,7 +48,7 @@ public class Question15 {
         counter = 0;
         ArrayList<String> choice = findEachVehicleFrom(vehiclesChosen);
 
-        while (counter < choice.size()) {
+        while (counter < vehicles.size()) {
             displayResult(choice, vehicles.get(counter), distance);
             counter++;
         }
@@ -57,7 +58,7 @@ public class Question15 {
         int time = 0;
         double noOfGallonsNeeded = 0, noOfGallonsUsed = 0;
 
-        if (choice.contains(vehicle.getUserSelection())){
+        if (choice.contains(vehicle.getVehicleType())){
             System.out.println("For " + vehicle.getVehicleType() + ":");
             time = distance / vehicle.getMaximumSpeed();
             System.out.println("The total amount of time required to reach your destinations is: " + time + "hrs.");
@@ -92,21 +93,19 @@ public class Question15 {
     }
 
     private static void displayVehicles(Vehicle vehicle) {
-        System.out.println(vehicle.getUserSelection() + "." + vehicle.getVehicleType() + " : " +vehicle.getCapacity() + " person, " + vehicle.getFuelInTank() + " gallons of fuel, "
+        System.out.println(vehicle.getVehicleType() + " : " +vehicle.getCapacity() + " person, " + vehicle.getFuelInTank() + " gallons of fuel, "
                 + vehicle.getFuelConsumedPerHour() + " gal/hr, " + "@" +vehicle.getMaximumSpeed() + "mph");
 
     }
 
     public static class Vehicle{
-        String userSelection;
         int capacity;
         int fuelInTank;
         int maximumSpeed;
         double fuelConsumedPerHour;
         String vehicleType;
 
-        public Vehicle(String newUserSelection, int newCapacity, int newFuelInTank, int newMaximumSpeed, double newFuelConsumedPerHour, String newType) {
-            userSelection = newUserSelection;
+        public Vehicle(int newCapacity, int newFuelInTank, int newMaximumSpeed, double newFuelConsumedPerHour, String newType) {
             capacity = newCapacity;
             fuelInTank = newFuelInTank;
             maximumSpeed = newMaximumSpeed;
@@ -133,44 +132,40 @@ public class Question15 {
         public String getVehicleType() {
             return vehicleType;
         }
-
-        public String getUserSelection() {
-            return userSelection;
-        }
     }
 
     public static class Bike extends Vehicle{
 
         public Bike() {
-            super("1", 1, 5, 65, 0.5, "Bike");
+            super(1, 5, 65, 0.5, "Bike");
         }
     }
 
     public static class Boat extends Vehicle{
 
         public Boat() {
-            super("2", 3, 10, 35, 1, "Boat");
+            super(3, 10, 35, 1, "Boat");
         }
     }
 
     public static class ToyotaCamry extends Vehicle{
 
         public ToyotaCamry() {
-            super("3", 4, 15, 80, 0.4, "Toyota Camry");
+            super(4, 15, 80, 0.4, "Toyota Camry");
         }
     }
 
     public static class SUV extends Vehicle{
 
         public SUV() {
-            super("4", 8, 18, 80, 0.6, "SUV");
+            super(8, 18, 80, 0.6, "SUV");
         }
     }
 
     public static class Helicopter extends Vehicle{
 
         public Helicopter() {
-            super("5", 2, 10, 100, 2.2, "Helicopter");
+            super(2, 10, 100, 2.2, "Helicopter");
         }
     }
 }
