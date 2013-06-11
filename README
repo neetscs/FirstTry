@@ -81,4 +81,15 @@ Questions
 	2. Once the user chooses all the vehicles they have, ask the user how far their desination is.
 	3. Then for each vehicle, output the total amount of time and the number of fuel refills they need to reach
 		their destination
-	
+16. Write a program that simulates a movie theater. This movie theater has three ticket counters and three queues of people
+	who are waiting to purchase tickets. There are three kinds of ticket purchases: single ticket purchases, group
+	ticket purchases and internet ticket pickups. The average time to process each type is as follows:
+	(a) single ticket - 2 mins
+	(b) group tickets - 5 mins
+	(c) internet ticket pickup - 1 min
+	Your simulation should start with 100 ppl, of which
+	(a) 31% will buy single tickets
+	(b) 47% will buy group tickets
+	(c) rest will be internet ticket pickups
+	After running the simulation, you should print out the total time it took for the 100 ppl to purchase their
+	tickets and the number of people services by each counter.
