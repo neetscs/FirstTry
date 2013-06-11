@@ -91,5 +91,6 @@ Questions
 	(a) 31% will buy single tickets
 	(b) 47% will buy group tickets
 	(c) rest will be internet ticket pickups
+	Each new person coming to the theatre will join the smallest of the three queues.
 	After running the simulation, you should print out the total time it took for the 100 ppl to purchase their
 	tickets and the number of people services by each counter.
