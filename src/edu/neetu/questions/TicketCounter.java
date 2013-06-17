@@ -10,7 +10,7 @@ import java.util.Queue;
  */
 public class TicketCounter {
     int counterNumber;
-    Queue<Person> noOfPplInCounter;
+    Queue<Person> personQueue;
     int numberOfTicketsSold;
     int noOfPplInQueue;
 
@@ -18,26 +18,20 @@ public class TicketCounter {
         this.counterNumber = counterNumber;
         this.noOfPplInQueue = noOfPplInQueue;
         this.numberOfTicketsSold = numberOfTicketsSold;
-        noOfPplInCounter = newPersonQueue;
+        personQueue = newPersonQueue;
     }
 
-    public int getCounterNumber() {
-        return counterNumber;
-    }
-    public Queue<Person> getNoOfPplInCounter() {
-        return noOfPplInCounter;
+    public Queue<Person> getPersonQueue() {
+        return personQueue;
     }
 
     public int getNoOfPplInQueue() {
         return noOfPplInQueue;
     }
 
-    public void setCounterNumber(int counterNumber) {
-        this.counterNumber = counterNumber;
-    }
 
-    public void setNoOfPplInCounter(Queue<Person> noOfPplInCounter) {
-        this.noOfPplInCounter = noOfPplInCounter;
+    public void setPersonQueue(Queue<Person> personQueue) {
+        this.personQueue = personQueue;
     }
 
     public void setNoOfPplInQueue(int getNoOfPplInQueue) {
@@ -48,18 +42,13 @@ public class TicketCounter {
         return numberOfTicketsSold;
     }
 
-    public void setNumberOfTicketsSold(int numberOfTicketsSold) {
-        this.numberOfTicketsSold = numberOfTicketsSold;
-    }
 
-    void purchase(TicketType ticketType, Person person){
-        int time = ticketType.getProcessingTime(person);
-        if (time == 1){
-            noOfPplInCounter.remove();
+    Person getPersonAtCounter(){
+        return getPersonQueue().element();
+    }
+    void purchase(){
+            personQueue.remove();
             numberOfTicketsSold++;
             noOfPplInQueue--;
-        }
-        else
-            time--;
     }
 }

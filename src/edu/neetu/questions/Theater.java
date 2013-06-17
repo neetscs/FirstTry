@@ -25,4 +25,15 @@ public class Theater {
         }
         return  ticketCounterList;
     }
+
+    boolean hasPersonWaiting(){
+        if (ticketCounters[0].getNoOfPplInQueue() > 0)
+            return true;
+        if (ticketCounters[1].getNoOfPplInQueue() > 0)
+            return true;
+        if (ticketCounters[2].getNoOfPplInQueue() > 0)
+            return true;
+        else
+            return false;
+    }
 }

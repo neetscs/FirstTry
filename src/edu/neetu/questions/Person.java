@@ -1,6 +1,5 @@
 package edu.neetu.questions;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
@@ -23,6 +22,10 @@ public class Person {
 
     public TicketType getType() {
         return type;
+    }
+
+    int getTicketProcessTime(Person person){
+        return getType().getProcessingTime(person);
     }
 
     void gotoTheater(Theater theater){
@@ -51,10 +54,9 @@ public class Person {
     }
 
     void joinTicketCounter(TicketCounter counter){
-        Queue<Person> personQueue = counter.getNoOfPplInCounter();
+        Queue<Person> personQueue = counter.getPersonQueue();
         personQueue.add(new Person(id, type));
-        counter.setNoOfPplInCounter(personQueue);
+        counter.setPersonQueue(personQueue);
         counter.setNoOfPplInQueue(counter.getNoOfPplInQueue()+1);
-        counter.purchase(type, new Person(id, type));
     }
 }
