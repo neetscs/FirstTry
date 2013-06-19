@@ -27,7 +27,7 @@ public class Person {
     int getTicketProcessTime(Person person){
         return getType().getProcessingTime(person);
     }
-
+    //The person checks for the smallest Queue amongst the ticket counters and joins it.
     void gotoTheater(Theater theater){
         List<TicketCounter> ticketCounterList ;
         TicketCounter selectedTicketCounter;
@@ -52,7 +52,7 @@ public class Person {
 
         joinTicketCounter(selectedTicketCounter);
     }
-
+    //Person joins the selected Queue.
     void joinTicketCounter(TicketCounter counter){
         Queue<Person> personQueue = counter.getPersonQueue();
         personQueue.add(new Person(id, type));

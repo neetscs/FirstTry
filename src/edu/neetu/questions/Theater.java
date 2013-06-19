@@ -25,7 +25,7 @@ public class Theater {
         }
         return  ticketCounterList;
     }
-
+    //Check if there are any people waiting in the Queue to buy tickets
     boolean hasPersonWaiting(){
         if (ticketCounters[0].getNoOfPplInQueue() > 0)
             return true;

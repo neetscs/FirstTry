@@ -46,7 +46,9 @@ public class TicketCounter {
     Person getPersonAtCounter(){
         return getPersonQueue().element();
     }
+
     void purchase(){
+        //After purchasing a ticket, the person is removed from the Queue and the number of tickets sold in that counter is incremented
             personQueue.remove();
             numberOfTicketsSold++;
             noOfPplInQueue--;

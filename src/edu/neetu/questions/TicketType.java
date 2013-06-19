@@ -8,7 +8,7 @@ package edu.neetu.questions;
  */
 public enum TicketType {
     SINGLE, GROUP, INTERNET;
-
+    //Get the time for processing each type of ticket for a person
     int getProcessingTime(Person person){
         int processingTime = 0;
         if (person.getType().equals(TicketType.SINGLE)){
