@@ -1,4 +1,4 @@
-package edu.neetu.questions;
+package edu.neetu.questions.question16;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,16 +8,18 @@ package edu.neetu.questions;
  */
 public enum TicketType {
     SINGLE, GROUP, INTERNET;
-    //Get the time for processing each type of ticket for a person
-    int getProcessingTime(Person person){
+    //Get the time for processing each type of ticket
+    public int getProcessingTime(){
+
         int processingTime = 0;
-        if (person.getType().equals(TicketType.SINGLE)){
+
+        if (equals(SINGLE)){
           processingTime = 2;
         }
-        else if (person.getType().equals(TicketType.GROUP)){
+        else if (equals(GROUP)){
           processingTime = 5;
         }
-        else if (person.getType().equals(TicketType.INTERNET)){
+        else if (equals(INTERNET)){
           processingTime = 1;
         }
         return processingTime;

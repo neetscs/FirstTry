@@ -1,6 +1,6 @@
 package edu.neetu.questions;
 
-import java.util.*;
+import edu.neetu.questions.question16.Simulation;
 
 /**
  * Created with IntelliJ IDEA.
